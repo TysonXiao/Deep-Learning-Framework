@@ -1,0 +1,48 @@
+digraph g {
+2694994560976 [label="gx2", color=orange, style=filled]
+2694994307952 [label="Mul", color=lightblue, style=filled, shape=box]
+2694994307760 -> 2694994307952
+2694994560832 -> 2694994307952
+2694994307952 -> 2694994560976
+2694994307760 [label="", color=orange, style=filled]
+2694994560832 [label="", color=orange, style=filled]
+2694994307808 [label="Sub", color=lightblue, style=filled, shape=box]
+2694994560784 -> 2694994307808
+2694994307856 -> 2694994307808
+2694994307808 -> 2694994560832
+2694994560784 [label="", color=orange, style=filled]
+2694994307856 [label="", color=orange, style=filled]
+2694994307712 [label="Pow", color=lightblue, style=filled, shape=box]
+2694994298256 -> 2694994307712
+2694994307712 -> 2694994307856
+2694994298256 [label="y", color=orange, style=filled]
+2694955541536 [label="Tanh", color=lightblue, style=filled, shape=box]
+2694955541440 -> 2694955541536
+2694955541536 -> 2694994298256
+2694955541440 [label="x", color=orange, style=filled]
+2694994307376 [label="Mul", color=lightblue, style=filled, shape=box]
+2694994307520 -> 2694994307376
+2694994306992 -> 2694994307376
+2694994307376 -> 2694994307760
+2694994307520 [label="", color=orange, style=filled]
+2694994306992 [label="", color=orange, style=filled]
+2694994306848 [label="Neg", color=lightblue, style=filled, shape=box]
+2694994306896 -> 2694994306848
+2694994306848 -> 2694994306992
+2694994306896 [label="", color=orange, style=filled]
+2694992573408 [label="Mul", color=lightblue, style=filled, shape=box]
+2694994300224 -> 2694992573408
+2694994300272 -> 2694992573408
+2694992573408 -> 2694994306896
+2694994300224 [label="", color=orange, style=filled]
+2694994300272 [label="", color=orange, style=filled]
+2694994307184 [label="Mul", color=lightblue, style=filled, shape=box]
+2694994307280 -> 2694994307184
+2694994307328 -> 2694994307184
+2694994307184 -> 2694994307520
+2694994307280 [label="", color=orange, style=filled]
+2694994307328 [label="", color=orange, style=filled]
+2694994306944 [label="Pow", color=lightblue, style=filled, shape=box]
+2694994298256 -> 2694994306944
+2694994306944 -> 2694994307280
+}

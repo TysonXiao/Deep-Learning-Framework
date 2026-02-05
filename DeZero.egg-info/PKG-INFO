@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dezero
+Version: 0.1.0
+Summary: A simple deep learning framework
+Author: Tyson
+Requires-Dist: numpy

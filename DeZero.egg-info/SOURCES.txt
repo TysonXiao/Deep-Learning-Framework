@@ -1,0 +1,15 @@
+setup.py
+DeZero.egg-info/PKG-INFO
+DeZero.egg-info/SOURCES.txt
+DeZero.egg-info/dependency_links.txt
+DeZero.egg-info/requires.txt
+DeZero.egg-info/top_level.txt
+dezero/__init__.py
+dezero/core_simple.py
+dezero/test_package.py
+dezero/test_style.py
+dezero.egg-info/PKG-INFO
+dezero.egg-info/SOURCES.txt
+dezero.egg-info/dependency_links.txt
+dezero.egg-info/requires.txt
+dezero.egg-info/top_level.txt
