@@ -82,23 +82,31 @@ from dezero.utils import plot_dot_graph
 # print(x1.grad)         
 
 
-import numpy as np
-import timeit
+# import numpy as np
+# import timeit
 
 # np.show_config()
 
-# 准备数据
-x = np.random.rand(800000)
-y = np.random.rand(800000)
+# # 准备数据
+# x = np.random.rand(800000)
+# y = np.random.rand(800000)
 
-# 定义测试语句
-stmt = "np.dot(x, y)"
+# # 定义测试语句
+# stmt = "np.dot(x, y)"
 
-# 准备环境（避免在循环中重复创建数组）
-setup = "import numpy as np; from __main__ import x, y"
+# # 准备环境（避免在循环中重复创建数组）
+# setup = "import numpy as np; from __main__ import x, y"
 
-number = 1000
-# 运行 1,000,000 次，取总时间
-total_time = timeit.timeit(stmt, setup=setup, number=number)
+# number = 1000
+# # 运行 1,000,000 次，取总时间
+# total_time = timeit.timeit(stmt, setup=setup, number=number)
 
-print(f"单次 dot 运算平均耗时: {total_time / number * 1e6:.3f} 微秒 (us)")
+# print(f"单次 dot 运算平均耗时: {total_time / number * 1e6:.3f} 微秒 (us)")
+
+x = Variable(np.random.randn(2,3))
+W = Variable(np.random.randn(3,4))
+y = F.matmul(x, W)
+y.backward()
+print(y)
+print(x.grad.shape)
+print(W.grad.shape)

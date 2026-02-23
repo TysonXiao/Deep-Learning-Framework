@@ -1,7 +1,6 @@
 import numpy as np
 import weakref
 import contextlib
-
 import dezero
 
 
@@ -136,6 +135,10 @@ def as_variable(obj):
     if isinstance(obj, Variable):
         return obj
     return Variable(obj)
+
+
+class Parameter(Variable):
+    pass
 
 
 class Function:
@@ -291,3 +294,6 @@ def setup_variable():
     Variable.__truediv__ = div
     Variable.__rtruediv__ = rdiv
     Variable.__pow__ = pow
+
+    from dezero import functions as F
+    Variable.__getitem__ = F.get_item
